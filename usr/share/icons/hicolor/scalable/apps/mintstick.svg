@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g transform="matrix(2.86 0 0 2.86 -17.6 -6.9427)">
+  <g fill-rule="evenodd" stroke-miterlimit="2" stroke-width="0">
+   <rect transform="translate(18.864 34.345)" width="5.375" height="10.251" fill="#c4cbcf"/>
+   <rect transform="translate(24.239,34.345)" width="5.375" height="10.251" fill="#a8b2b8"/>
+   <rect transform="translate(14.838 4.5709)" width="18.638" height="30.413" rx="3.819" ry="3.817" fill="#3498db"/>
+   <rect transform="translate(20.117 40.333)" width="2.831" height="1.706" fill="#4d4d4d"/>
+   <rect transform="translate(25.702 40.333)" width="2.851" height="1.706" fill="#4d4d4d"/>
+  </g>
+  <g fill="#ecf0f1" stroke-miterlimit="2" stroke-width="0">
+   <rect transform="matrix(0 -1 1 0 26.904 15.775)" width="2.905" height="2.913"/>
+   <path transform="translate(22.251 26.746)" d="m1.9795 4.1644e-8c1.0932-2.2171e-4 1.9795 0.88487 1.9795 1.9768 0 1.0919-0.88632 1.977-1.9795 1.9767-1.0932 2.2e-4 -1.9795-0.88486-1.9795-1.9767 0-1.0919 0.88631-1.977 1.9795-1.9768z"/>
+   <path transform="translate(18.767 15.424)" d="m1.753 3.7017e-8c0.9681-1.9671e-4 1.753 0.78362 1.753 1.7506 0 0.96695-0.78489 1.7508-1.753 1.7506-0.9681 2e-4 -1.753-0.78362-1.753-1.7506 0-0.96696 0.7849-1.7508 1.753-1.7506z"/>
+   <path transform="translate(22.671 7.6438)" d="m0 3.4723s1.5609-3.5248 1.5993-3.4717c0.03838 0.053005 1.5481 3.4717 1.5481 3.4717z" fill-rule="evenodd"/>
+  </g>
+  <g fill="none" stroke="#ecf0f1" stroke-miterlimit="2.0126" stroke-width=".223">
+   <path transform="matrix(.99998 -.006813 .006813 .99998 20.315 17.968)" d="M 3.85591,7.84494 C 3.60632,5.35266 0,4.09528 0,2.64933 0,1.67171 0.0481687,1.24401 0.0481687,0"/>
+   <path transform="translate(24.225 15.037)" d="m0 8.0985c0-2.4517 2.6941-3.0291 4.0296-4.8426 0.20396-0.30727 0.07135-3.0787 0.07135-3.2559"/>
+   <path transform="translate(24.218 10.364)" d="M 0,18.3938 0,0"/>
+  </g>
+  <g fill-rule="evenodd">
+   <path transform="translate(26.376 25.787)" d="m19.126 9.6029c-0.0099-5.3118-4.2966-9.6104-9.5763-9.6029-5.2796 0.0075137-9.5543 4.3183-9.5493 9.6301 0.0049788 5.3117 4.2877 9.6143 9.5673 9.6119 5.2797-0.0026 9.5583-4.3093 9.5583-9.6211" fill="#8bc941" stroke-miterlimit="2" stroke-width="0"/>
+   <rect transform="matrix(0 -1 1 0 30.24 36.747)" width="2.648" height="11.493" fill="#ecf0f1"/>
+   <rect transform="translate(34.669 29.682)" width="2.648" height="11.501" fill="#ecf0f1"/>
+  </g>
+ </g>
+</svg>

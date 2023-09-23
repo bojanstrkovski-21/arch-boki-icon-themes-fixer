@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = numix-icon-theme-git
+Target = numix-circle-icon-theme-git
+
+[Action]
+Description = arch-boki pacman hook for icon theme Numix
+When = PostTransaction
+Exec = /usr/local/bin/arch-boki-fix-icon-theme-numix

@@ -1,0 +1,35 @@
+#!/bin/bash
+#set -e
+###############################################################################
+# Author	:	Erik Dubois
+# Website	:	https://www.erikdubois.be
+# Website	:	https://www.arcolinux.info
+# Website	:	https://www.arcolinux.com
+# Website	:	https://www.arcolinuxd.com
+# Website	:	https://www.arcolinuxb.com
+# Website	:	https://www.arcolinuxiso.com
+# Website	:	https://www.arcolinuxforum.com
+###############################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
+###############################################################################
+
+if [ -d /usr/share/icons/Faba ]; then
+	FIND="Inherits=elementary,gnome,hicolor"
+	REPLACE="Inherits=elementary,gnome,Surfn,hicolor"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Faba/index.theme
+
+	FIND="Inherits=Moka,Faba,gnome"
+	REPLACE="Inherits=Moka,Faba,gnome,Surfn"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Faba-Mono/index.theme
+
+	FIND="Inherits=Moka,Faba,gnome"
+	REPLACE="Inherits=Moka,Faba,gnome,Surfn"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Faba-Mono-Dark/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Faba
+	gtk-update-icon-cache -q /usr/share/icons/Faba-Mono
+	gtk-update-icon-cache -q /usr/share/icons/Faba-Mono-Dark
+	
+fi

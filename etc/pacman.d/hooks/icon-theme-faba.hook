@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = faba-icon-theme-git
+Target = faba-mono-icons-git
+
+[Action]
+Description = arch-boki pacman hook for icon theme faba
+When = PostTransaction
+Exec = /usr/local/bin/arch-boki-fix-icon-theme-faba

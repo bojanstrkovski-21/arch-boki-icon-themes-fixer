@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = qogir-icon-theme
+
+[Action]
+Description = arch-boki pacman hook for icon theme Qogir
+When = PostTransaction
+Exec = /usr/local/bin/arch-boki-fix-icon-theme-qogir

@@ -1,0 +1,80 @@
+#!/bin/bash
+#set -e
+###############################################################################
+# Author	:	Erik Dubois
+# Website	:	https://www.erikdubois.be
+# Website	:	https://www.arcolinux.info
+# Website	:	https://www.arcolinux.com
+# Website	:	https://www.arcolinuxd.com
+# Website	:	https://www.arcolinuxb.com
+# Website	:	https://www.arcolinuxiso.com
+# Website	:	https://www.arcolinuxforum.com
+###############################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
+###############################################################################
+
+
+if [ -d /usr/share/icons/Tela-circle ]; then
+	FIND="Inherits=hicolor"
+	REPLACE="Inherits=Surfn,hicolor"	
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-black/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-black-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-blue/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-blue-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-brown/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-brown-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-green/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-green-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-grey/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-grey-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-manjaro/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-manjaro-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-nord/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-nord-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-orange/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-orange-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-pink/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-pink-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-purple/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-purple-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-red/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-red-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-ubuntu/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-ubuntu-dark/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-yellow/index.theme
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Tela-circle-yellow-dark/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-black
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-black-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-blue
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-blue-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-brown
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-brown-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-green
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-green-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-grey
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-grey-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-manjaro
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-manjaro-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-nord
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-nord-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-orange
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-orange-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-pink
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-pink-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-purple
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-purple-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-red
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-red-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-ubuntu
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-ubuntu-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-yellow
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-yellow-dark
+
+fi

@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = tela-circle-icon-theme-git
+
+[Action]
+Description = arch-boki pacman hook for icon theme Tela
+When = PostTransaction
+Exec = /usr/local/bin/arch-boki-fix-icon-theme-tela

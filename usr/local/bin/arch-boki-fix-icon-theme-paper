@@ -1,0 +1,30 @@
+#!/bin/bash
+#set -e
+###############################################################################
+# Author	:	Erik Dubois
+# Website	:	https://www.erikdubois.be
+# Website	:	https://www.arcolinux.info
+# Website	:	https://www.arcolinux.com
+# Website	:	https://www.arcolinuxd.com
+# Website	:	https://www.arcolinuxb.com
+# Website	:	https://www.arcolinuxiso.com
+# Website	:	https://www.arcolinuxforum.com
+###############################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
+###############################################################################
+
+if [ -d /usr/share/icons/Paper ]; then
+	FIND="Inherits=Adwaita,gnome,hicolor"
+	REPLACE="Inherits=Surfn,Adwaita,gnome,hicolor"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Paper/index.theme
+
+	FIND="Inherits=Paper,Adwaita,gnome,hicolor"
+	REPLACE="Inherits=Paper,Surfn,Adwaita,gnome,hicolor"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Paper-Mono-Dark/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Paper
+	gtk-update-icon-cache -q /usr/share/icons/Paper-Mono-Dark
+	
+fi

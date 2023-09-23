@@ -1,0 +1,300 @@
+#!/bin/bash
+#set -e
+###############################################################################
+# Author	:	Erik Dubois
+# Website	:	https://www.erikdubois.be
+# Website	:	https://www.arcolinux.info
+# Website	:	https://www.arcolinux.com
+# Website	:	https://www.arcolinuxd.com
+# Website	:	https://www.arcolinuxb.com
+# Website	:	https://www.arcolinuxiso.com
+# Website	:	https://www.arcolinuxforum.com
+###############################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
+###############################################################################
+
+if [ -d /usr/share/icons/Arc ]; then
+	
+	FIND="Inherits=Moka,Faba,elementary,Adwaita,gnome,hicolor"
+	REPLACE="Inherits=Moka,Faba,elementary,Adwaita,gnome,Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Arc/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Arc
+	
+fi
+
+
+if [ -d /usr/share/icons/breeze ]; then
+	
+	FIND="Inherits=hicolor"
+	REPLACE="Inherits=Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/breeze/index.theme
+
+	FIND="Inherits=breeze,hicolor"
+	REPLACE="Inherits=breeze,Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/breeze-dark/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/breeze
+	gtk-update-icon-cache -q /usr/share/icons/breeze-dark
+	
+fi
+
+
+if [ -d /usr/share/icons/Faba ]; then
+	FIND="Inherits=elementary,gnome,hicolor"
+	REPLACE="Inherits=elementary,gnome,Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Faba/index.theme
+
+	FIND="Inherits=Moka,Faba,gnome"
+	REPLACE="Inherits=Moka,Faba,gnome,Surfn"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Faba-Mono/index.theme
+
+	FIND="Inherits=Moka,Faba,gnome"
+	REPLACE="Inherits=Moka,Faba,gnome,Surfn"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Faba-Mono-Dark/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Faba
+	gtk-update-icon-cache -q /usr/share/icons/Faba-Mono
+	gtk-update-icon-cache -q /usr/share/icons/Faba-Mono-Dark
+	
+fi
+
+
+
+if [ -d /usr/share/icons/Flat-Remix-Black-Dark ]; then
+	FIND="Inherits=breeze-dark,elementary,gnome,hicolor"
+	REPLACE="Inherits=breeze-dark,elementary,gnome,Surfn,hicolor"	
+	
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Black-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Blue-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Brown-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Cyan-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Green-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Grey-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Magenta-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Orange-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Red-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Teal-Dark/index.theme	
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Violet-Dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Yellow-Dark/index.theme
+
+	FIND="Inherits=breeze,elementary,gnome,hicolor"
+	REPLACE="Inherits=breeze,elementary,gnome,Surfn,hicolor"	
+
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Black-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Blue-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Brown-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Cyan-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Green-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Grey-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Magenta-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Orange-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Red-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Teal-Light/index.theme	
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Violet-Light/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Yellow-Light/index.theme
+
+	FIND="Inherits=breeze,elementary,gnome,hicolor"
+	REPLACE="Inherits=breeze,elementary,gnome,Surfn,hicolor"	
+
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Black-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Blue-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Brown-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Cyan-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Green-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Grey-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Magenta-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Orange-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Red-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Teal-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Violet-Light-darkPanel/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Flat-Remix-Yellow-Light-darkPanel/index.theme
+
+
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Black-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Black-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Black-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Blue-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Blue-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Blue-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Brown-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Brown-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Brown-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Cyan-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Cyan-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Cyan-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Green-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Green-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Green-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Grey-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Grey-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Grey-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Magenta-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Magenta-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Magenta-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Orange-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Orange-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Orange-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Red-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Red-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Red-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Teal-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Teal-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Teal-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Violet-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Violet-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Violet-Light-darkPanel
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Yellow-Dark
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Yellow-Light
+	gtk-update-icon-cache -q /usr/share/icons/Flat-Remix-Yellow-Light-darkPanel
+
+fi
+
+
+if [ -d /usr/share/icons/Numix ]; then
+	FIND="Inherits=gnome,hicolor"
+	REPLACE="Inherits=Surfn,gnome,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Numix/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Numix
+	gtk-update-icon-cache -q /usr/share/icons/Numix-Light
+	gtk-update-icon-cache -q /usr/share/icons/Numix-Circle
+	gtk-update-icon-cache -q /usr/share/icons/Numix-Circle-Arc
+	gtk-update-icon-cache -q /usr/share/icons/Numix-Circle-Light
+	
+fi
+
+
+if [ -d /usr/share/icons/Paper ]; then
+	FIND="Inherits=Adwaita,gnome,hicolor"
+	REPLACE="Inherits=Surfn,Adwaita,gnome,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Paper/index.theme
+
+	FIND="Inherits=Paper,Adwaita,gnome,hicolor"
+	REPLACE="Inherits=Paper,Surfn,Adwaita,gnome,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Paper-Mono-Dark/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Paper
+	gtk-update-icon-cache -q /usr/share/icons/Paper-Mono-Dark
+	
+fi
+
+
+
+if [ -d /usr/share/icons/Papirus ]; then
+	FIND="Inherits=breeze,hicolor"
+	REPLACE="Inherits=breeze,Surfn-Plasma-Light,Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Papirus/index.theme
+
+	FIND="Inherits=breeze-dark,hicolor"
+	REPLACE="Inherits=breeze-dark,Surfn-Plasma-Dark,Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Papirus-Dark/index.theme
+
+	FIND="Inherits=breeze,hicolor"
+	REPLACE="Inherits=breeze,Surfn-Plasma-Light,Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Papirus-Light/index.theme
+
+	FIND="Inherits=elementary,hicolor"
+	REPLACE="Inherits=elementary,Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/ePapirus/index.theme
+
+	FIND="Inherits=elementary,hicolor"
+	REPLACE="Inherits=elementary,Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/ePapirus-Dark/index.theme	
+
+	gtk-update-icon-cache -q /usr/share/icons/Papirus
+	gtk-update-icon-cache -q /usr/share/icons/Papirus-Light
+	gtk-update-icon-cache -q /usr/share/icons/Papirus-Dark
+
+	gtk-update-icon-cache -q /usr/share/icons/ePapirus
+	gtk-update-icon-cache -q /usr/share/icons/ePapirus-Dark
+	
+fi
+
+
+
+if [ -d /usr/share/icons/Qogir ]; then
+	FIND="Inherits=hicolor"
+	REPLACE="Inherits=Surfn,hicolor"
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Qogir/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Qogir-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Qogir-manjaro/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Qogir-manjaro-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Qogir-ubuntu/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Qogir-ubuntu-dark/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Qogir
+	gtk-update-icon-cache -q /usr/share/icons/Qogir-dark
+	gtk-update-icon-cache -q /usr/share/icons/Qogir-manjaro
+	gtk-update-icon-cache -q /usr/share/icons/Qogir-manjaro-dark
+	gtk-update-icon-cache -q /usr/share/icons/Qogir-ubuntu
+	gtk-update-icon-cache -q /usr/share/icons/Qogir-ubuntu-dark
+
+fi
+
+
+
+if [ -d /usr/share/icons/Tela-circle ]; then
+	FIND="Inherits=hicolor"
+	REPLACE="Inherits=Surfn,hicolor"	
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-black/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-black-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-blue/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-blue-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-brown/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-brown-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-green/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-green-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-grey/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-grey-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-manjaro/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-manjaro-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-nord/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-nord-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-orange/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-orange-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-pink/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-pink-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-purple/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-purple-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-red/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-red-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-ubuntu/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-ubuntu-dark/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-yellow/index.theme
+	sudo sed -i "s/$REPLACE/$FIND/g" /usr/share/icons/Tela-circle-yellow-dark/index.theme
+
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-black
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-black-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-blue
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-blue-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-brown
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-brown-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-green
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-green-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-grey
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-grey-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-manjaro
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-manjaro-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-nord
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-nord-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-orange
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-orange-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-pink
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-pink-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-purple
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-purple-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-red
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-red-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-ubuntu
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-ubuntu-dark
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-yellow
+	gtk-update-icon-cache -q /usr/share/icons/Tela-circle-yellow-dark
+
+fi

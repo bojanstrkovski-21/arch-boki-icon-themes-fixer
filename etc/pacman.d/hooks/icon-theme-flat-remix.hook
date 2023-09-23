@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = flat-remix-git
+
+[Action]
+Description = arch-boki pacman hook for icon theme flat-remix-git
+When = PostTransaction
+Exec = /usr/local/bin/arch-boki-fix-icon-theme-flat-remix

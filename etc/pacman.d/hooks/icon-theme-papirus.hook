@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = papirus-icon-theme
+
+[Action]
+Description = arch-boki pacman hook for icon theme papirus
+When = PostTransaction
+Exec = /usr/local/bin/arch-boki-fix-icon-theme-papirus

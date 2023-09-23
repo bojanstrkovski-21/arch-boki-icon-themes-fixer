@@ -1,0 +1,46 @@
+#!/bin/bash
+#set -e
+###############################################################################
+# Author	:	Erik Dubois
+# Website	:	https://www.erikdubois.be
+# Website	:	https://www.arcolinux.info
+# Website	:	https://www.arcolinux.com
+# Website	:	https://www.arcolinuxd.com
+# Website	:	https://www.arcolinuxb.com
+# Website	:	https://www.arcolinuxiso.com
+# Website	:	https://www.arcolinuxforum.com
+###############################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
+###############################################################################
+
+if [ -d /usr/share/icons/Papirus ]; then
+	FIND="Inherits=breeze,hicolor"
+	REPLACE="Inherits=breeze,Surfn-Plasma-Light,Surfn,hicolor"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Papirus/index.theme
+
+	FIND="Inherits=breeze-dark,hicolor"
+	REPLACE="Inherits=breeze-dark,Surfn-Plasma-Dark,Surfn,hicolor"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Papirus-Dark/index.theme
+
+	FIND="Inherits=breeze,hicolor"
+	REPLACE="Inherits=breeze,Surfn-Plasma-Light,Surfn,hicolor"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/Papirus-Light/index.theme
+
+	FIND="Inherits=elementary,hicolor"
+	REPLACE="Inherits=elementary,Surfn,hicolor"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/ePapirus/index.theme
+
+	FIND="Inherits=elementary,hicolor"
+	REPLACE="Inherits=elementary,Surfn,hicolor"
+	sudo sed -i "s/$FIND/$REPLACE/g" /usr/share/icons/ePapirus-Dark/index.theme	
+
+	gtk-update-icon-cache -q /usr/share/icons/Papirus
+	gtk-update-icon-cache -q /usr/share/icons/Papirus-Light
+	gtk-update-icon-cache -q /usr/share/icons/Papirus-Dark
+
+	gtk-update-icon-cache -q /usr/share/icons/ePapirus
+	gtk-update-icon-cache -q /usr/share/icons/ePapirus-Dark
+	
+fi
